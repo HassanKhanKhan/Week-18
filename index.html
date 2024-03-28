@@ -334,6 +334,7 @@
             canCheckout() {
                 const letters = /^[A-Za-z]+$/;
                     const numbers = /^[0-9]+$/;
+                    const lettersAndNumbers = /^[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[A-Za-z]+$/;
                     let valid = true;
                     if (this.userData.name.match(letters) === null) {
                         valid = false;
@@ -341,10 +342,10 @@
                     if (this.userData.phone.match(numbers) === null) {
                         valid = false;
                     }
-                    if (this.userData.address.match(letters) === null) {
+                    if (this.userData.address.match(lettersAndNumbers) === null) {
                         valid = false;
                     }
-                    if (this.userData.email.match(letters) === null) {
+                    if (this.userData.email.match(lettersAndNumbers) === null) {
                         valid = false;
                     }
                     
