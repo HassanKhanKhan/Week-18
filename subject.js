@@ -3,7 +3,7 @@ let subjects = [{
     lesson: "Apple iPhone 15 Pro Max (512 GB) - Blue Titanium",
     location: 'Amazon.ae',
     price: "5000",
-    spaces: 4,
+    spaces: 3,
     image: "img/iphone15.png"
 },
 
@@ -11,7 +11,7 @@ let subjects = [{
     lesson: "Apple iPhone 14 Pro (256 GB) - Purple",
     location: 'Global Village, Amazon.ae',
     price: "4000",
-    spaces: 55,
+    spaces: 15,
     image: "img/iphone14.png"
 },
 {
@@ -25,7 +25,7 @@ let subjects = [{
     lesson: "Apple iPhone 12 Pro - 256GB - Graphite (Unlocked) Smartphone",
     location: 'Ski Dubai,Amazon.ae',
     price: "2000",
-    spaces: 9,
+    spaces: 45,
     image: "img/iphone 12.png"
 },
 {
