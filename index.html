@@ -188,25 +188,25 @@
                             <h2 class="text-primary" style="font-family: 'Times New Roman', Times, serif;">Place Order</h2>
                             <div class="mb-3">
                                 <label for="inputName" class="form-label">Name</label>
-                                <input type="text" class="form-control" id="inputName" v-model.trim="userData.name" aria-describedby="nameHelp">
+                                <input type="text" class="form-control" id="inputName" v-model.trim="userData.name" aria-describedby="nameHelp" placeholder="HASS..">
                                 <div id="nameHelp" class="form-text">Please enter your full name.</div>
                             </div>
                             
                             <div class="mb-3">
                                 <label for="inputPhone" class="form-label">Phone</label>
-                                <input type="tel" class="form-control" id="inputPhone" v-model.trim="userData.phone" aria-describedby="phoneHelp">
+                                <input type="tel" class="form-control" id="inputPhone" v-model.trim="userData.phone" aria-describedby="phoneHelp" placeholder="050140..">
                                 <div id="phoneHelp" class="form-text">Please enter your phone number.</div>
                             </div>
                             
                             <div class="mb-3">
                                 <label for="inputEmail" class="form-label">Email</label>
-                                <input type="email" class="form-control" id="inputEmail" v-model.trim="userData.email" aria-describedby="emailHelp">
+                                <input type="email" class="form-control" id="inputEmail" v-model.trim="userData.email" aria-describedby="emailHelp" placeholder="HK800@gmail...">
                                 <div id="emailHelp" class="form-text">Please enter your email address.</div>
                             </div>
                             
                             <div class="mb-3">
                                 <label for="inputAddress" class="form-label">Address</label>
-                                <input type="text" class="form-control" id="inputAddress" v-model.trim="userData.address" aria-describedby="addressHelp">
+                                <input type="text" class="form-control" id="inputAddress" v-model.trim="userData.address" aria-describedby="addressHelp" placeholder="Al Barsha 1 ...">
                                 <div id="addressHelp" class="form-text">Please enter your address.</div>
                             </div>
                             
@@ -334,21 +334,22 @@
             canCheckout() {
                 const letters = /^[A-Za-z]+$/;
                     const numbers = /^[0-9]+$/;
-                    const lettersAndNumbers = /^[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[A-Za-z]+$/;
+                    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // Regular expression for email validation
                     let valid = true;
+
                     if (this.userData.name.match(letters) === null) {
                         valid = false;
                     }
                     if (this.userData.phone.match(numbers) === null) {
                         valid = false;
                     }
-                    if (this.userData.address.match(lettersAndNumbers) === null) {
+                    if (this.userData.address.trim() === '') { // Check if the address is not empty
                         valid = false;
                     }
-                    if (this.userData.email.match(lettersAndNumbers) === null) {
+                    if (!emailPattern.test(this.userData.email)) { // Validate email using the emailPattern
                         valid = false;
                     }
-                    
+
                     return valid;
             },
             totalCost() {
