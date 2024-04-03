@@ -150,7 +150,7 @@
                             <div id="subjects" class="card-container">
                                 <div class="subject-card" v-for="subject in filterItems">
                                     <div class="subject-image">
-                                        <img class="image" :src="subject.image" alt="Subject Image">
+                                        <img class="image" v-bind:src="subject.image" alt="Subject Image">
                                     </div>
                                     <div class="card-content">
                                         <div class="info-container">
