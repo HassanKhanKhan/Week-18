@@ -61,10 +61,14 @@
                 <a class="navbar-brand" href="#">
                     <h1 class="logo" style="color: aliceblue;">{{sitename}}</h1>
                 </a>
+                <!-------Not in use----->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
-                </button>
+                </button> 
+                 <!-------End Not in use----->
+
+                <!----------Start Nav Bar ----->
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                     <div class="navbar-nav">
                         <div class="nav-item">
@@ -93,9 +97,10 @@
                 </div>
             </div>
         </nav>
-        
+        <!-------------------------NavBar End--------------------- -->
 
-        <!-------------------------Header End--------------------- -->
+   <!-------------------------Main Body Start--------------------- -->
+        
         <main class="display-flex-col width-height">
             <!-- <div class="container-fluid"> -->
             <!-- <div class="row"> -->
@@ -365,6 +370,8 @@
                 });
 
                 // Sort based on the selected criteria
+                //logical operator || for checking true and flase 
+                
                 if (this.criteria === 'price' || this.criteria === 'spaces') {
                     filteredSubjects.sort((a, b) => {
                         if (this.order === 'ascending') {
