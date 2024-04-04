@@ -1,31 +1,31 @@
 let subjects = [{
 
-    lesson: "English Language",
+    lesson: "English Language - 8 Band Vocabulary for Ielts: Vocabulary for Ielts",
     location: 'Burj Khalifa',
     price: "500",
     spaces: 5,
-    image: "img/englishlanguage.jpg"
+    image: "img/image copy.png"
 },
 {
     lesson: "Swimming",
     location: 'Burj Al Arab',
     price: "3000",
     spaces: 5,
-    image: "img/swimming.jpg"
+    image: "img/image copy 2.png"
 },
 {
     lesson: "Sports activity",
     location: 'Global Village',
     price: "4000",
     spaces: 5,
-    image: "img/sportactivity.png"
+    image: "img/image copy 3.png"
 },
 {
     lesson: "Ice skating",
     location: 'Dubai Mall',
     price: "1500",
     spaces: 5,
-    image: "img/icekating.png"
+    image: "img/image copy 4.png"
 },
 {
     lesson: "Futsal",
@@ -39,21 +39,21 @@ let subjects = [{
     location: 'Dubai Garden',
     price: "3000",
     spaces: 5,
-    image: "img/arabic.jpeg"
+    image: "img/image.png"
 },
 {
     lesson: "Indoor Games",
     location: 'Down Town',
     price: "1000",
     spaces: 5,
-    image: "img/indoorgames.jpg"
+    image: "img/image copy 5.png"
 },
 {
     lesson: "Outdoor Games",
     location: 'Desert Safari',
     price: "800",
     spaces: 5,
-    image: "img/ouutdoorgames.png"
+    image: "img/image copy 7.png"
 },
 {
     lesson: "Movies",
@@ -68,7 +68,7 @@ let subjects = [{
     location: 'Home town',
     price: "200",
     spaces: 5,
-    image: "img/practiceskils.png"
+    image: "img/image copy 8.png"
 
 },
 ]
