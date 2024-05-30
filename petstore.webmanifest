@@ -1,0 +1,14 @@
+{
+"name":"My Pet Store PWA",
+"description": "my online pet store",
+"icons":[
+    {
+        "src":"Images/Chemistry.png",
+        "size":"512x512",
+        "type":""
+    }
+],
+"start_url":"index.html",
+"display":"fullscreen",
+"background_color":"#B12A34"
+}

@@ -1,18 +1,12 @@
 let subjects = [{
-
+    
     lesson: "English Language - 8 Band Vocabulary for Ielts: Vocabulary for Ielts",
     location: 'Burj Khalifa',
     price: "500",
     spaces: 5,
     image: "Images/image copy.png"
 },
-{
-    lesson: "Swimming",
-    location: 'Burj Al Arab',
-    price: "3000",
-    spaces: 5,
-    image: "Images/image copy 2.png"
-},
+
 {
     lesson: "Sports activity",
     location: 'Global Village',
